@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Question, QuizAnswerRecord } from '../types';
-import { OPTION_THEMES } from '../data/defaultQuestions';
+import { OPTION_THEMES } from '../questions';
 import { calculateQuestionScore } from '../utils/quizScoring';
 import { Clock, Zap, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';

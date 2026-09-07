@@ -1,5 +1,5 @@
 import { Question } from '../types';
-import { DEFAULT_10_QUESTIONS } from '../data/defaultQuestions';
+import { DEFAULT_10_QUESTIONS } from '../questions';
 
 const QUESTIONS_STORAGE_KEY = 'wedding_quiz_official_10_questions_v3';
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FUN_AVATARS } from '../data/defaultQuestions';
+import { FUN_AVATARS } from '../questions';
 import { WEDDING_TABLES } from '../utils/quizScoring';
 import { Heart, Sparkles, Clock, CheckCircle2, Trophy, ArrowRight, User, MapPin } from 'lucide-react';
 
