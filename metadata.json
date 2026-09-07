@@ -1,0 +1,8 @@
+{
+  "name": "幸福快問快答 · 婚禮親友互動遊戲",
+  "description": "婚禮專屬親友互動答題小遊戲！單一連結分享即玩，支援全場手機連線雲端即時排行榜。開局輸入暱稱與所在桌號，自動彙整各桌戰績排行與個人總榜，計分加總時間速度與答對題數，答完一題無縫切換下一題，完賽揭曉總分與各選項詳細回顧。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
