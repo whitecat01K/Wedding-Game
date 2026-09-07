@@ -18,11 +18,18 @@ git push -u origin main
 ```
 
 ### 步驟 2：啟用 GitHub Pages 自動部署（完全免費）
-本專案已配置 `.github/workflows/deploy.yml` 自動構建與發布：
-1. 進入您的 GitHub Repository 頁面，點擊頂部的 **Settings**。
-2. 在左側欄位點選 **Pages**。
-3. 在 **Build and deployment** 下方的 **Source**，選為 **GitHub Actions**。
-4. 推送程式碼後，GitHub Actions 將會自動編譯並發布上線（例如：`https://<username>.github.io/<repo-name>/`），現場親友以手機掃描該網址產生的 QR Code 即可連線遊玩！
+本專案已配置 `.github/workflows/deploy.yml`，在您推送程式碼至 `main` 分支後會自動構建。
+
+**請檢查 GitHub 倉庫的兩處設定以確保發布成功**：
+1. **開放 Actions 寫入權限**（最常見失敗原因）：
+   - 進入 GitHub 專案頁面 ➔ 點擊 **Settings** ➔ 左側點選 **Actions** ➔ **General**。
+   - 滾動到最下方的 **Workflow permissions**，選擇 **Read and write permissions** 並點擊 **Save**。
+2. **設定 GitHub Pages 來源**：
+   - 在左側選單點選 **Pages**。
+   - 在 **Build and deployment** 下方的 **Source** 選擇 **Deploy from a branch**。
+   - 分支選擇 **`gh-pages`** 分支，資料夾選擇 **`/ (root)`** 並點擊 **Save**。
+   - （Actions 在第一次執行後會自動建立 `gh-pages` 分支並將編譯好的網頁放入）。
+3. 部署完成後，頂部會顯示綠色打勾與上線網址（例如：`https://<username>.github.io/<repo-name>/`），現場親友以手機掃描該網址產生的 QR Code 即可連線遊玩！
 
 ---
 
